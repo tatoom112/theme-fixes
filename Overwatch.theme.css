@@ -1,4 +1,4 @@
-//META{"name":"Overwatch","description":"For all Overwatch lovers out there!","author":"Matt & tehbasshunter 🎣","version":"1.11"}*//
+//META{"name":"Overwatch","description":"For all Overwatch lovers out there!","author":"Matt & tehbasshunter ðŸŽ£","version":"1.11"}*//
 
 /*
 ##     ##    ###    ######## ######## ##     ##    ###    ########
@@ -309,6 +309,19 @@ textarea {
     background-image: url(https://imgur.com/YKiWE79.png) !important;
     background-size: cover;
     background-position: center center;
+}
+
+/* Settings Background Fix*/
+.ui-standard-sidebar-view {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.sidebar-region {
+    background-color: rgba(0, 0, 0, 0.80) !important;
+}
+
+.content-region {
+    background-color: rgba(0, 0, 0, 0.70) !important;
 }
 
 .form .btn-default {
