@@ -2,6 +2,10 @@
 
 /*Base CSS by @Hammock | Edited by @Narugokyu */
 
+/*Fix for channel changes?*/
+
+.container-RYiLUQ {background: transparent !important;}
+
 /* Main background and settings background [You can edit these freely] */
 .app, .callout-backdrop {
 	background:url("https://i.imgur.com/psYBCaf.png") !important;
