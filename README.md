@@ -1,2 +1,4 @@
 # Theme Fixes
-These are themes that have not been updated with various fixes.
+This will be where themes submitted to the BetterDiscord serve and the develeoper has decided to discontinue updates.  
+  
+At some point they will become auto-updating.
