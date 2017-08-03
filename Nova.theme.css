@@ -1,17 +1,6 @@
-//META{"name":"Nova","description":"Some theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.2.0"}*//
+//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.0"}*//
 
-/* Copyright (c) 2016-2017 DinosParkour
- * Please do not redistribute without permission.
- * Thank you, and enjoy!
- *
- * VERSION: 1.1.9
- *
- *
- *
- */
-
-/*Fix for CSS changes?*/
-
+/*Temporary place for CSS fixes*/
 .container-RYiLUQ,
 .wrapper-2ldvyE,
 .private-channels .channel.selected a,
@@ -25,9 +14,22 @@
 .contentSelectedVoice-gTtYM9:active{
 	background-color: rgba(0,0,0,.3);
 }
-.bd-minimal .channels-wrap {
-    width: 230px;
+.private-channel-call,
+.ui-video{
+ background: rgba(0,0,0,.5) !important;   
 }
+.channel-text-area-default [class*="inner-"],  /* The chat bar */
+.channel-text-area-default [class*="autocomplete-"], /* Auto complete wrapper */
+.channel-text-area-default [class*="autocompleteInner-"], /* Auto complete container */
+.channel-text-area-default [class*="selectorSelected-"] { /* Selected item in auto complete */
+    background-color: rgba(0,0,0,.6); }
+.channel-text-area-default [class*="textArea-"], /* Text in chat bar */
+.channel-text-area-default [class*="selector-"] [class*="marginLeft8-"] { /* User names in auto complete */
+    color: white; }
+.btn-options, .btn-reactions {
+    display: none!important;
+} 
+	
 
 /* Background */
 .app {
@@ -36,6 +38,11 @@
 }
 
 .layers, .layer { background: transparent!important;
+}
+
+/*Minimal mode*/
+.bd-minimal .channels-wrap {
+    width: 230px;
 }
 
 /*Transparency*/
@@ -53,6 +60,7 @@
 .friend-table-add-header,
 .chat,
 .content,
+.layers,
 .title-wrap:not(.search-bar),
 .messages-wrapper,
 .messages .divider span,
@@ -313,10 +321,7 @@ div.channel.channel-text.selected {
 }
 
 /*Scrolling bar*/
-.scroller-wrap .scroller::-webkit-scrollbar-thumb {
-    border: 3px solid rgba(0,0,0,0.25) !important;
-}
-
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     border: 3px solid rgba(255,255,255,0) !important;
     background-color: rgba(0,0,0,0.3) !important;
