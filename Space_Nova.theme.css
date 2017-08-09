@@ -2,8 +2,7 @@
 
 /*Base CSS by @Hammock | Edited by @Narugokyu */
 
-/*Fix for channel changes?*/
-
+/*Temporary place for CSS fixes*/
 .container-RYiLUQ,
 .wrapper-2ldvyE,
 .private-channels .channel.selected a,
@@ -15,8 +14,20 @@
 .contentHoveredText-2HYGIY, 
 .contentHoveredVoice-3qGNKh:active, 
 .contentSelectedVoice-gTtYM9:active{
-    background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
 }
+.private-channel-call,
+.ui-video{
+ background: rgba(0,0,0,.5) !important;   
+}
+.channel-text-area-default [class*="inner-"],  /* The chat bar */
+.channel-text-area-default [class*="autocomplete-"], /* Auto complete wrapper */
+.channel-text-area-default [class*="autocompleteInner-"], /* Auto complete container */
+.channel-text-area-default [class*="selectorSelected-"] { /* Selected item in auto complete */
+    background-color: rgba(0,0,0,.6); }
+.channel-text-area-default [class*="textArea-"], /* Text in chat bar */
+.channel-text-area-default [class*="selector-"] [class*="marginLeft8-"] { /* User names in auto complete */
+    color: white; }
 
 /* Main background and settings background [You can edit these freely] */
 .app, .callout-backdrop {
