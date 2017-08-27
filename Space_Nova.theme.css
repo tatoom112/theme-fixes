@@ -1,33 +1,10 @@
-//META{"name":"Space_Nova","description":"Theme made by Kyu & tehbasshunter 🎣","author":"Kyu","version":"2.2.3"}*//{}
+//META{"name":"Space_Nova","description":"Space Theme","author":"Kyu & tehbasshunter 🎣","version":"2.2.4"}*//{}
 
 /*Base CSS by @Hammock | Edited by @Narugokyu */
 
-/*Temporary place for CSS fixes*/
-.container-RYiLUQ,
-.wrapper-2ldvyE,
-.private-channels .channel.selected a,
-.private-channels .channel:hover a
-{
-    background: transparent !important;    
-}
-.contentSelectedText-3j5CXt,
-.contentHoveredText-2HYGIY, 
-.contentHoveredVoice-3qGNKh:active, 
-.contentSelectedVoice-gTtYM9:active{
-	background-color: rgba(0,0,0,.3);
-}
-.private-channel-call,
-.ui-video{
- background: rgba(0,0,0,.5) !important;   
-}
-.channel-text-area-default [class*="inner-"],  /* The chat bar */
-.channel-text-area-default [class*="autocomplete-"], /* Auto complete wrapper */
-.channel-text-area-default [class*="autocompleteInner-"], /* Auto complete container */
-.channel-text-area-default [class*="selectorSelected-"] { /* Selected item in auto complete */
-    background-color: rgba(0,0,0,.6); }
-.channel-text-area-default [class*="textArea-"], /* Text in chat bar */
-.channel-text-area-default [class*="selector-"] [class*="marginLeft8-"] { /* User names in auto complete */
-    color: white; }
+/* IMPORT CSS FROM GITHUB */
+@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css);
+
 
 /* Main background and settings background [You can edit these freely] */
 .app, .callout-backdrop {
