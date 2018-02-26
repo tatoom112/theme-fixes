@@ -1,13 +1,4 @@
-//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.0"}*//
-
-/* IMPORT CSS FROM GITHUB */
-@import url(https://rawgit.com/GimoTheBeast/Discord-Theme-Fixes/master/fixesImport/fixesClean.css);
-
-	
-.btn-options, .btn-reactions {
-    display: none!important;
-} 
-	
+//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5"}*//
 
 /* Background */
 .app {
@@ -354,3 +345,61 @@ div.channel.channel-text.selected {
 .channel-members .popout-open {
     background: rgba(255,255,255,0.07) !important;
 }
+
+/*Temp Fixes*/
+#voice-connection, 
+#friends, 
+.friends-header, 
+.friends-table, 
+.guilds-wrapper, 
+.guild-header header, 
+.channels-wrap, 
+.private-channels .search-bar, 
+.private-channels, 
+.guild-channels, 
+.account, 
+.friend-table-add-header, 
+.chat, 
+.content, 
+.title-wrap:not(.search-bar), 
+.messages-wrapper, 
+.messages .divider span, 
+.messages .divider:before, 
+.message-group-blocked, 
+.is-local-bot-message, 
+.channel-members-loading, 
+.channel-members-loading .heading, 
+.channel-members-loading .member, 
+.typing, 
+.container-RYiLUQ, 
+.ui-standard-sidebar-view, 
+.ui-standard-sidebar-view .sidebar-region, 
+.ui-standard-sidebar-view .content-region, 
+.channel-members, .container-2OU7Cz, 
+.title-qAcLxz, 
+.chat form, 
+.channels-3g2vYe, 
+.friends-table, 
+.messages-wrapper, 
+.content .flex-spacer, 
+.channel-members, 
+.guilds-wrapper, 
+.search .search-bar, 
+.chat form, 
+.container-iksrDt, 
+.container-3lnMWU, 
+.title-qAcLxz {background:transparent!important;} 
+.typeWindows-15E0Ys {background:rgba(0,0,0,0.18)!important;}
+
+/* fix not having a background image anymore */
+.layers-20RVFW, .layer-kosS71, .container-2OU7Cz, .typing-3eiiL_ {
+  background: transparent !important;
+}
+/* optionally adjust background brightness (0: original image, 1: black) */
+.layers-20RVFW {
+  background: rgba(0,0,0, 0.3) !important;
+}
+
+.btn-options, .btn-reactions {
+    display: none!important;
+} 
