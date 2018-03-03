@@ -1,4 +1,4 @@
-//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5"}*//
+//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5.2"}*//
 
 /* Background */
 .app {
@@ -222,7 +222,7 @@ div.channel.channel-text.selected {
 }
 
 .markup {
-	backface-visibility: hidden;
+	backface-visibility: unset;
 }
 
 /*Unread messages*/
@@ -399,7 +399,3 @@ div.channel.channel-text.selected {
 .layers-20RVFW {
   background: rgba(0,0,0, 0.3) !important;
 }
-
-.btn-options, .btn-reactions {
-    display: none!important;
-} 
