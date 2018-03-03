@@ -1,4 +1,4 @@
-//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5.2"}*//
+//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5.3"}*//
 
 /* Background */
 .app {
@@ -398,4 +398,16 @@ div.channel.channel-text.selected {
 /* optionally adjust background brightness (0: original image, 1: black) */
 .layers-20RVFW {
   background: rgba(0,0,0, 0.3) !important;
+}
+
+/* More Shit Fixed? */
+.appMount-14L89u {
+    background-image: url(https://i.imgur.com/h0YyOD7.png);
+    background-size: cover;
+}
+.appMount-XYZfmp, .container-2OU7Cz, .channels-3g2vYe, .title-qAcLxz, .chat form, .headerBar-cxbhPD {
+    background: transparent !important; 
+}
+.headerBar-cxbhPD {
+	border-bottom-color: rgba(0,0,0,0.25) !important;
 }
