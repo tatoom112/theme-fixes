@@ -839,3 +839,6 @@ input:focus {
 .layers-20RVFW {
   background: rgba(0,0,0, 0.3) !important;
 }
+
+/* Fixes Memberlist transparency changes */
+.members-1bid1J { background: transparent; }
