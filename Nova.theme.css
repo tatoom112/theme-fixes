@@ -1,4 +1,5 @@
-//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.5.4"}*//
+//META{"name":"Nova_Theme","description":"Explore the galaxy with a chilling theme","author":"DinosParkour & tehbasshunter 🎣","version":"1.6"}*//
+
 
 /* Background */
 .app {
@@ -6,16 +7,8 @@
     background-size: cover;
 }
 
-.layers, .layer { background: transparent!important;
-}
-
-/*Minimal mode*/
-.bd-minimal .channels-wrap {
-    width: 230px;
-}
-
 /*Transparency*/
-#rtc-connection,
+#voice-connection,
 #friends,
 .friends-header,
 .friends-table,
@@ -123,12 +116,12 @@ div.channel.channel-text.selected {
 }
 
 /*Voice panel*/
-#rtc-connection {
+#voice-connection {
     border-top: none;
 }
 
 /*Buttons*/
-#rtc-connection .btn,
+#voice-connection .btn,
 .account .btn {
     border: none;
     border-bottom: solid 1px rgba(235,232,218,0.05);
@@ -136,7 +129,7 @@ div.channel.channel-text.selected {
     opacity: .65;
 }
 
-#rtc-connection .btn-group,
+#voice-connection .btn-group,
 .account .btn-group {
     box-shadow: .75px 1.5px 1px #14171b;
     border: none;
@@ -222,7 +215,7 @@ div.channel.channel-text.selected {
 }
 
 .markup {
-	backface-visibility: unset;
+	backface-visibility: hidden;
 }
 
 /*Unread messages*/
@@ -346,7 +339,10 @@ div.channel.channel-text.selected {
     background: rgba(255,255,255,0.07) !important;
 }
 
-/*Temp Fixes*/
+
+/*Code above this line is by the original dev*/
+/*Changes made by tehbasshunter*/
+
 #voice-connection, 
 #friends, 
 .friends-header, 
@@ -358,59 +354,75 @@ div.channel.channel-text.selected {
 .private-channels, 
 .guild-channels, 
 .account, 
-.friend-table-add-header, 
+.friend-table-add-header,
 .chat, 
 .content, 
 .title-wrap:not(.search-bar), 
 .messages-wrapper, 
 .messages .divider span, 
 .messages .divider:before, 
-.message-group-blocked, 
-.is-local-bot-message, 
+.content, .message-group-blocked, 
+.is-local-bot-message,
 .channel-members-loading, 
 .channel-members-loading .heading, 
 .channel-members-loading .member, 
 .typing, 
 .container-RYiLUQ, 
-.ui-standard-sidebar-view, 
-.ui-standard-sidebar-view .sidebar-region, 
-.ui-standard-sidebar-view .content-region, 
-.channel-members, .container-2OU7Cz, 
-.title-qAcLxz, 
-.chat form, 
+.theme-dark .ui-standard-sidebar-view, 
+.theme-dark .ui-standard-sidebar-view .sidebar-region,
+.theme-dark .ui-standard-sidebar-view .content-region,
+.theme-dark .channel-members,
+.theme-dark .chat form, 
 .channels-3g2vYe, 
-.friends-table, 
-.messages-wrapper, 
+.theme-dark .friends-table, 
+.theme-dark .messages-wrapper, 
 .content .flex-spacer, 
+.theme-dark .chat>.content, 
+.theme-dark .chat, 
 .channel-members, 
-.guilds-wrapper, 
 .search .search-bar, 
-.chat form, 
 .container-iksrDt, 
 .container-3lnMWU, 
-.title-qAcLxz {background:transparent!important;} 
-.typeWindows-15E0Ys {background:rgba(0,0,0,0.18)!important;}
-
-/* fix not having a background image anymore */
-.layers-20RVFW, .layer-kosS71, .container-2OU7Cz, .typing-3eiiL_ {
+.theme-dark .title-qAcLxz, 
+.theme-dark .typing-3eiiL_,
+.container-2OU7Cz,
+.theme-dark .activityFeed-HeiGwL,
+.theme-dark .headerBar-cxbhPD,
+.theme-dark .lfg-3xoFkI,
+.video-3lOWa6,
+.theme-dark .private-channel-call,
+.appMount-3VJmYg,
+.container-2lgZY8,
+.channels-Ie2l6A,
+.container-PNkimc,
+.container-2Thooq,
+.theme-dark .title-3qD0b-,
+.theme-dark .typing-2GQL18,
+.search-bar.search-bar-light,
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S,
+.theme-dark .members-1998pB{
   background: transparent !important;
 }
-/* optionally adjust background brightness (0: original image, 1: black) */
-.layers-20RVFW {
-  background: rgba(0,0,0, 0.3) !important;
+.theme-dark .card-2WxYqG {
+    background-color: rgba(54, 57, 63, 0.3)!important;
+}
+.theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .typeWindows-15E0Ys {
+    background: rgba(0, 0, 0, 0.18) !important;
 }
 
-/* More Shit Fixed? */
-.appMount-14L89u {
-    background-image: url(https://i.imgur.com/h0YyOD7.png);
-    background-size: cover;
-}
-.appMount-XYZfmp, .container-2OU7Cz, .channels-3g2vYe, .title-qAcLxz, .chat form, .headerBar-cxbhPD {
-    background: transparent !important; 
-}
-.headerBar-cxbhPD {
-	border-bottom-color: rgba(0,0,0,0.25) !important;
-}
 
-/* Fixes Memberlist transparency changes */
-.members-1bid1J { background: transparent; }
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group:hover,
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
+    background-color: rgba(0,0,0,0.6) !important;
+}
+.messagesPopoutWrap-1MQ1bW .header-ykumBX,
+.messagesPopoutWrap-1MQ1bW {
+    background-color: rgba(0,0,0,0) !important;
+}
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group .actionButtons-1sUUug .jumpButton-3DTcS_ {
+    background-color: rgba(0,0,0,0.4) !important;
+}
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group:hover .actionButtons-1sUUug {
+    box-shadow: 0 0 6px 4px rgba(0,0,0,0.4) !important;
+    background: transparent !important;
+}
