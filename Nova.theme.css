@@ -426,3 +426,7 @@ div.channel.channel-text.selected {
     box-shadow: 0 0 6px 4px rgba(0,0,0,0.4) !important;
     background: transparent !important;
 }
+
+.markup {
+    backface-visibility: unset;
+}
