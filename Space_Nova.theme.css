@@ -2591,3 +2591,41 @@ accounts-list .connect-container .btn {
     box-shadow: 0 0 6px 4px rgba(0,0,0,0.4) !important;
     background: transparent !important;
 }
+
+/* THE FOLLOWING IS CUSTOMIZATION FOR SERVERS/GUILDS THAT AREN'T AVAILBLE FOR ONE REASON OR ANOTHER. DELETE IF DESIRED*/
+
+/*The magic is here, didn't know the reason it wasn't showing up was due to it not using "content". The image had to be the background to simplify the positioning and sizing.*/
+.guilds-wrapper .guilds-error::after{
+    content: "";
+    text-indent: 0%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/97/Crystal_Project_Lock.png);
+    background-size: 25px 25px;
+    /*background-size: cover;*/ /*This tag takes dominance over the other one, would spread the whole image over the outage image.*/
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+/*Hides the exclamation point text so it can be replaced without issue.*/
+.guilds-wrapper .guilds-error{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#app-mount > div.tooltips div.tooltip-right.tooltip-red {
+    font-size: 0;
+    max-width: 208px
+}
+
+#app-mount > div.tooltips div.tooltip-right.tooltip-red strong:before {
+    font-size: 14px;
+    content: "You have some servers unavailable due to the online usercap reached or discord is having issues. Check https://status.discordapp.com to see current issues.";
+}
+
+/*END OF CUSTOMIZATION */
